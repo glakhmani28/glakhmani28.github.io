@@ -1,0 +1,61 @@
+- lessons.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Learning Hub | Lessons</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff8f0; color: #333; margin: 0; }
+    header, footer { background: green; color: white; text-align: center; padding: 1em; }
+    nav ul { list-style: none; display: flex; justify-content: center; padding: 0; margin: 0; background: #444; }
+    nav li { margin: 0 1em; }
+    nav a { text-decoration: none; color: white; }
+    main { padding: 2em; max-width: 900px; margin: auto; }
+    section { margin-bottom: 2em; background: #f4f4f4; padding: 1em; border-left: 5px solid #f39c12; }
+    code { background: #eee; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header><h1>JavaScript Lessons</h1></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Lesson 1: Variables</h2>
+      <p>JavaScript variables are containers for storing data values. Use <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+      <pre><code>let name = "Geetika";
+const PI = 3.14;
+var age = 25;</code></pre>
+    </section>
+
+    <section>
+      <h2>Lesson 2: Functions</h2>
+      <p>Functions let you reuse code:</p>
+      <pre><code>function greet(name) {
+  return "Hello, " + name;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Lesson 3: Conditionals</h2>
+      <p>Conditional statements control the flow:</p>
+      <pre><code>if (age > 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}</code></pre>
+    </section>
+  </main>
+  <footer><div data-include="itis3135\components\footer.html"></div>
+    <script src="../scripts/main.js"></script>
+      <script src="../scripts/HTMLinclude.min.js"></script><p>&copy; 2025 JavaScript Learning Hub</p></footer>
+</body>
+</html>

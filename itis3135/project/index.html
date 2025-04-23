@@ -1,0 +1,79 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Learning Hub | Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #eef1f5; color: #222; }
+    header, footer { background: green; color: white; padding: 1em; text-align: center; }
+    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; background: #444; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; }
+    main { padding: 2em; max-width: 800px; margin: auto; }
+    .tip-box { margin-top: 1em; padding: 1em; background: #dff0d8; border-left: 5px solid #4cae4c; }
+    button { padding: 0.5em 1em; background: #4cae4c; color: white; border: none; cursor: pointer; }
+    h2.toggle { cursor: pointer; color: #007BFF; }
+    .content { display: none; margin-bottom: 1em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#loadTip").click(function() {
+        $.get("tips.txt", function(data) {
+          const tips = data.split("\n");
+          const randomTip = tips[Math.floor(Math.random() * tips.length)];
+          $("#tip").text(randomTip);
+        });
+      });
+
+      $("h2.toggle").click(function() {
+        $(this).next(".content").slideToggle();
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Learning Hub</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 class="toggle">Welcome to JS Learning Hub</h2>
+    <div class="content">
+      <p>Start learning JavaScript from scratch! Explore syntax, logic, and interactivity.</p>
+    </div>
+
+    <h2 class="toggle">How the Hub Works</h2>
+    <div class="content">
+      <p>Read lessons, take quizzes, and explore real examples. Use our tips feature for random tips!</p>
+    </div>
+
+    <h2 class="toggle">Why Learn JavaScript?</h2>
+    <div class="content">
+      <p>It powers dynamic web content, games, servers, and more. A must-have skill for developers.</p>
+    </div>
+
+    <section class="tip-box">
+      <h3>Random JavaScript Tip</h3>
+      <button id="loadTip">Show Tip</button>
+      <p id="tip">Click the button for a JS tip!</p>
+    </section>
+  </main>
+  <footer>
+    <div data-include="itis3135\components\footer.html"></div>
+  <script src="../scripts/main.js"></script>
+    <script src="../scripts/HTMLinclude.min.js"></script>
+    <p>&copy; 2025 JavaScript Learning Hub</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Learning Hub | Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f7ff; color: #333; margin: 0; }
+    header, footer { background: green; color: white; text-align: center; padding: 1em; }
+    nav ul { list-style: none; display: flex; justify-content: center; padding: 0; margin: 0; background: #33658a; }
+    nav li { margin: 0 1em; }
+    nav a { text-decoration: none; color: white; }
+    main { padding: 2em; max-width: 800px; margin: auto; }
+    form { background: #e3f2fd; padding: 1em; border-left: 5px solid #42a5f5; }
+    label, p { display: block; margin: 1em 0 0.5em; }
+    input[type="radio"] { margin-right: 0.5em; }
+    button { margin-top: 1em; padding: 0.5em 1em; background: #42a5f5; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header><h1>Quiz Your Knowledge</h1></header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form>
+      <p>1. What keyword declares a constant in JavaScript?</p>
+      <label><input type="radio" name="q1"> var</label>
+      <label><input type="radio" name="q1"> const</label>
+      <label><input type="radio" name="q1"> let</label>
+
+      <p>2. Which method is used to print to the console?</p>
+      <label><input type="radio" name="q2"> alert()</label>
+      <label><input type="radio" name="q2"> print()</label>
+      <label><input type="radio" name="q2"> console.log()</label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <div data-include="itis3135\components\footer.html"></div>
+  <script src="../scripts/main.js"></script>
+    <script src="../scripts/HTMLinclude.min.js"></script><p>&copy; 2025 JavaScript Learning Hub</p></footer>
+</body>
+</html>

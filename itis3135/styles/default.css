@@ -1,7 +1,10 @@
+*{
+    margin: 0 auto;
+}
 body{
-    background-color: darkslategray;
+    background-color: black;
     text-align:center;
-    color:brown;
+    color:white;
     font-family: sans-serif;
 }
 h1,h2,h3{
@@ -20,8 +23,205 @@ main{
     text-align:left;
     margin-left:20%;
     margin-right:20%;
+    max-width: 500vh;
 }
 figure{
     text-align:center;
     font-style:italic;
 }
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    body {
+        width: 90%;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+   main {
+    width: 80%;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    main {
+        width: 70%;
+    }
+}
+table tr:first-child {
+    background-color: #333;
+    color: #fff;
+  }
+
+  
+  table tr:nth-child(even) {
+    background-color: #777;
+    color: #fff; }
+    .site-body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f0ff;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .site-header,
+      .site-footer {
+        background-color: #6a0dad;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      
+      .site-title {
+        margin: 0;
+      }
+      
+      .content {
+        padding: 20px;
+      }
+      
+      .page-heading {
+        text-align: center;
+        color: #4b0082;
+      }
+      
+      .page-tagline {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .form-wrapper {
+        background-color: blue;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .form-label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      
+      .form-label-inline {
+        margin-left: 5px;
+      }
+      
+      .form-field,
+      .form-select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+      }
+      
+      .input-group {
+        margin-top: 15px;
+      }
+      
+      .form-checkbox,
+      .form-radio {
+        margin-right: 5px;
+      }
+      
+      .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      
+      .btn-primary {
+        background-color: #4b0082;
+        color: #ffffff;
+      }
+      
+      .btn-secondary {
+        background-color: #ccc;
+        color: #000000;
+        margin-left: 10px;
+      }
+      
+      .footer-text {
+        margin: 5px 0;
+      }
+      
+      .footer-links {
+        margin: 5px 0;
+      }
+      
+      .footer-link {
+        color: #ffe;
+        text-decoration: underline;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f2f2f2;
+        color: #333;
+      }
+      
+      header, footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      main {
+        padding: 20px;
+      }
+      
+      h2 {
+        color: #007acc;
+      }
+      
+      .slideshow-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      #mainImage {
+        width: 80%;
+        max-height: 400px;
+        border: 2px solid #555;
+      }
+      
+      .caption {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .thumbnail-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .thumbnail-bar img {
+        width: 100px;
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+      
+      .thumbnail-bar img:hover {
+        border-color: #007acc;
+      }
+      
+      .prompts {
+        margin-top: 30px;
+      }
+      
+      .prompts ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+      
+      

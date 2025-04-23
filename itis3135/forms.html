@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/default.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+        <title>HTML Form - Whimsical Company</title>
+ 
+</head>
+
+<body class="site-body">
+  <header class="site-header">
+    <h1 class="site-title">ITIS 3135 - Geetika Lakhmani</h1>
+  </header>
+
+  <main class="content">
+    <h2 class="page-heading">Request Your Magical Unicorn Ride</h2>
+    <p class="page-tagline">Fill out the form below to schedule your next mythical adventure!</p>
+
+    <form class="form-wrapper" action="#" method="post">
+      <label for="name" class="form-label">Full Name:</label>
+      <input type="text" id="name" name="name" class="form-field" required size="30" placeholder="e.g. Sparkle McGlitter" />
+
+      <label for="phone" class="form-label">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" class="form-field" required placeholder="e.g. 123-456-7890" />
+
+      <label for="email" class="form-label">Email Address:</label>
+      <input type="email" id="email" name="email" class="form-field" required placeholder="e.g. you@example.com" />
+
+      <div class="input-group checkbox-group">
+        <p class="form-label">Choose your unicorn accessories:</p>
+        <div><input type="checkbox" id="wings" name="accessories" value="Wings" class="form-checkbox" />
+        <label for="wings" class="form-label-inline">Wings</label></div>
+
+        <div><input type="checkbox" id="sparkles" name="accessories" value="Sparkles" class="form-checkbox" />
+        <label for="sparkles" class="form-label-inline">Extra Sparkles</label></div>
+
+        <div><input type="checkbox" id="horn" name="accessories" value="Golden Horn" class="form-checkbox" />
+        <label for="horn" class="form-label-inline">Golden Horn</label></div>
+      </div>
+
+      <div class="input-group radio-group">
+        <p class="form-label">Preferred unicorn color:</p>
+        <div><input type="radio" id="white" name="color" value="White" class="form-radio" required />
+        <label for="white" class="form-label-inline">White</label></div>
+
+        <div><input type="radio" id="rainbow" name="color" value="Rainbow" class="form-radio" />
+        <label for="rainbow" class="form-label-inline">Rainbow</label></div>
+
+        <div><input type="radio" id="pink" name="color" value="Pink" class="form-radio" />
+        <label for="pink" class="form-label-inline">Pink</label></div>
+      </div>
+
+      <label for="rideTime" class="form-label">Select ride duration:</label>
+      <select id="rideTime" name="rideTime" class="form-select" required>
+        <option value="">--Choose Duration--</option>
+        <option value="30min">30 Minutes</option>
+        <option value="1hr">1 Hour</option>
+        <option value="2hr">2 Hours</option>
+      </select>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+        <button type="reset" class="btn btn-secondary">Reset Form</button>
+      </div>
+    </form>
+  </main>
+
+
+
+    <footer>
+        <div data-include="components\footer.html"></div>
+</footer>
+</body>
+</html>
